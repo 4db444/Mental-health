@@ -4,21 +4,26 @@ version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
     "matplotlib>=3.11.2",
-    "mypy>=2.4.1",
     "numpy>=2.5.4",
     "pandas>=3.1.1",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
 ]
 
-[project.scripts]
-mental-health = "mental_health:main"
-
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-root = "src"
-module-name = "mental_health"
+module-root = ""
+module-name = "src"
+
+[dependency-groups]
+dev = [
+    "astor>=0.8.1",
+    "ipykernel>=7.4.0",
+    "mypy>=2.4.1",
+    "nb-mypy>=1.0.1",
+    "nbqa>=1.10.0",
+]
 
