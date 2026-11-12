@@ -1,6 +1,6 @@
 from pandas import DataFrame
 from .save_data import save_dataset
-from src.config import EDA_REPORT_PATHS
+from src.config import EDA_REPORT_PATHS, HOURS_IN_WEEK
 
 def missing_values (df : DataFrame) -> None: 
     na_sum = df.isna().sum()[df.isna().sum() > 0]
@@ -28,3 +28,16 @@ def duplicate_values (df : DataFrame) -> None:
     print(dup_df)
 
     save_dataset(dup_df, EDA_REPORT_PATHS, "duplicated rows state.csv")
+
+def inconsistencies (df : DataFrame) -> dict[str : DataFrame]:
+    checks_obj = {
+        "socialmedia over screen time" : df[df["Social_Media_Hours"] > df["Screen_Time_Hours"]],
+        "non-binary" : df[df["Gender"] == "Non-binary"],
+        "total week hours" : df[df["Sleep_Hours"] * 7 + df["Study_Hours_Per_Week"] + df["Screen_Time_Hours"] * 7 >= HOURS_IN_WEEK]
+    }
+
+    for key, value in checks_obj.items():
+        print(key)
+        display(value)
+
+    return checks_obj
