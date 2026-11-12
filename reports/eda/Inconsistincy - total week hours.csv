@@ -1,0 +1,4 @@
+Student_ID,Age,Gender,Year_of_Study,Sleep_Hours,Study_Hours_Per_Week,GPA,Social_Media_Hours,Screen_Time_Hours,Physical_Activity,Financial_Stress,Family_Support,Attendance_Rate,Part_Time_Job,Diet_Quality,Previous_Mental_Health_History,Mental_Health_Risk
+STU0651,25,Male,2,9.8,24.6,2.3,6.6,11.0,Moderate,,7.3,84.0,No,Average,Yes,Low
+STU1498,24,Male,4,8.8,19.3,3.13,7.7,12.7,Moderate,,6.7,86.9,No,Good,No,Low
+STU1551,21,Male,1,8.4,20.7,2.65,9.2,12.7,Moderate,8.1,4.6,95.8,Yes,Poor,No,Medium
