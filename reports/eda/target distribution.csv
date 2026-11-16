@@ -1,0 +1,4 @@
+Mental_Health_Risk,count,percentage,ratio to smallest class
+Low,660,33.0,1.0
+Medium,660,33.0,1.0
+High,680,34.0,1.03

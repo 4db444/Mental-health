@@ -1,0 +1,4 @@
+,best cv f1,best params
+logistic regression,0.7488,{'classifier__C': 10}
+random forest,0.6752,"{'classifier__max_depth': 20, 'classifier__min_samples_leaf': 1, 'classifier__n_estimators': 200}"
+gradient boosting,0.6948,"{'classifier__learning_rate': 0.1, 'classifier__max_depth': 3, 'classifier__n_estimators': 200}"

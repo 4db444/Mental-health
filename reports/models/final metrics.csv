@@ -1,0 +1,2 @@
+,accuracy,precision,recall,f1,roc auc
+logistic regression,0.76,0.7596,0.76,0.7598,0.9139
