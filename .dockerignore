@@ -1,0 +1,13 @@
+.git
+.venv
+.opencode
+__pycache__
+*.py[cod]
+.env
+logs
+data
+models
+reports
+figures
+notebooks
+docs
